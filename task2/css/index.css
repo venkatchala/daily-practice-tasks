@@ -1,0 +1,117 @@
+.container{
+    border: 1px solid #000000;
+    width: 100%;
+    min-height: 200px;
+}
+.firstChild{
+    width: 100%;
+    min-height: 100px;
+    background-color: #00ffff;
+    display: flex;
+}
+.firstChild-box1{
+    width: 50%;
+    background-color: #0000ff;
+    border-right: 1px solid #000000;
+    
+}
+.firstChild-box2{
+    width: 50%;
+    background-color: #5fccff;
+    display: flex;
+    justify-content: flex-end;
+}
+.child-child{
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: #ffebcd;
+    margin: 10px;
+}
+.secondChild{
+    width: 100%;
+    min-height: 200px;
+    background-color: #11e3f9;
+}
+.secondChild-child{
+    width: 500px;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    padding-left: 300px;
+}
+.secondChildBox-parent{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.secondChild-box1{
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    background-color: #deb887;
+}
+.secondChild-box2{
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    background-color: #deb887;
+}
+.secondChild-box1:nth-child(2){
+    flex-grow: 3;
+}
+.secondChild-box2:nth-child(1){
+    flex-grow: 3;
+}
+.thirdChild{
+    width: 100%;
+    min-height: 200px;
+    background-color: #11c0f9;
+    display: flex;
+    justify-content: space-evenly;
+}
+.thirdChild-box{
+    width: 200px;
+    height: 200px;
+    background-color: #ffe4c4;
+    margin: 20px;
+}
+.fourthChild{
+    width: 100%;
+    min-height: 150px;
+    background-color: #119df9;
+    display: flex;
+    justify-content: center;
+}
+.fourthChild-box{
+    width: 100px;
+    height: 100px;
+    background-color: #f5f5dc;
+    margin: 20px;
+}
+.fourthChild-box:nth-child(2){
+    flex-grow: 3;
+}
+.fourthChild-box:nth-child(4){
+    flex-grow: 3;
+}
+.fourthChild-box:nth-child(6){
+    flex-grow: 3;
+}
+.fifthChild{
+    width: 100%;
+    min-height: 150px;
+    background-color: #11f2f9;
+    display: flex;
+    flex-wrap: wrap;
+}
+.fifthChild-box{
+    width: 120px;
+    height: 120px;
+    margin: 40px;
+    background-color: #f5f5dc;
+}

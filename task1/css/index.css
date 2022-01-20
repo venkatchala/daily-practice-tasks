@@ -1,0 +1,91 @@
+.container{
+    width: 100%;
+    min-height: 900px;
+    border: 1px solid black;
+    display: flex;
+}
+.leftContainer{
+    width: 20%;
+     min-height: 900px;
+}
+.rightContainer{
+    width: 80%;
+    min-height: 900px;
+}
+.firstChild{
+    width: 100%;
+    min-height: 33%;
+    background-color: skyblue;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.secondChild{
+    width: 100%;
+    min-height: 33%;
+    background-color: slateblue;
+}
+.thirdChild{
+    width: 100%;
+    min-height:34%;
+    background-color: slategrey;
+}
+.firstChild-child{
+    min-width: 80%;
+    height: 25%;
+    background-color: red;
+    position: absolute;
+    margin: 25px;
+    border-radius: 10px;
+}
+.right-firstChild{
+    width: 100%;
+    min-height: 10%;
+    background-color: steelblue;
+}
+.right-secondChild{
+    width: 100%;
+    min-height: 80%;
+    background-color: turquoise;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.r-s-Row{
+    width: 240px;
+    min-height: 200px;
+    margin: 20px;
+    background-color: gold;
+    position: relative;
+    margin-left: 50px;
+}
+
+.cornerBox{
+    width: 50px;
+    height: 25px;
+    background-color: gray;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 5px;
+}
+.right-thirdChild{
+    width: 100%;
+    min-height: 10%;
+    background-color: violet;
+    display: flex;
+    
+}
+.r-t-child{
+    width: 100px;
+    height: 50px;
+    background-color: yellowgreen;
+    margin: 10px;
+    border-radius: 10px;
+}
+@media (max-width:900px) {
+    .right-thirdChild{
+        flex-wrap: wrap;
+    }
+    
+}
