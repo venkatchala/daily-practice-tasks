@@ -1,0 +1,120 @@
+@media (max-width:991px) {
+    .firstChild{
+        width: 100%;
+        background-color: #00a2ff;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .firstChild-box1{
+        display: none;
+    }
+    .firstChild-box2{
+        display: none;
+    }
+    .firstChild-box3{
+        display: block;
+        width: 50px;
+        height: 50px;
+        padding: 5px;
+        border-radius: 50%;
+        background-color: #ffebcd;
+        margin: 10px;
+    }
+    .secondChild-child{
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+
+    }
+    .secondChildBox-parent{
+        width: 100%;
+        flex-wrap: wrap;
+        display: flex;
+    }
+    .secondChild-box1{
+        width: 100%;
+    }
+    .secondChild-box1:nth-child(1){
+        
+        height: 150px;
+    }
+    .secondChild-box1:nth-child(2){
+        
+        height: 60px;
+    }
+    .secondChild-box2{
+        width: 100%;
+        
+    }
+    
+    .secondChild-box2:nth-child(2){
+        width: 100%;
+        height: 150px;
+        order: 1;
+        
+    }
+    .secondChild-box2:nth-child(1){
+        width: 100%;
+        height: 60px;
+        order: 2;
+    
+    }
+    .thirdChild{
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        
+    }
+    .fourthChild{
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        
+    }
+    .fourthChild-box{
+        width: 100px;
+        height: 100px;
+        background-color: #f5f5dc;
+        margin: 10px;
+        
+    }
+    .fourthChild-box:nth-child(even){
+        width: 200px;
+        height: 100px;
+        flex-grow: 0;
+
+    }
+    .fifthChildBox-parent{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+    .fifthChild-box{
+        margin: 20px;
+    }
+    .fifthChild-box1{
+        width: 120px;
+        height: 120px;
+        margin: 20px;
+        background-color: #f5f5dc;
+    }
+    .fifthChild-box2{
+        width: 120px;
+        height: 60px;
+        margin: 20px;
+        background-color: #f5f5dc;
+        
+    }
+    .fifthChild-box2:nth-child(4){
+        visibility: hidden;
+    }
+    .fifthChild-box3{
+        width: 120px;
+        height: 60px;
+        margin: 20px;
+        background-color: #f5f5dc;
+
+    }
+    
+    
+}
