@@ -1,0 +1,60 @@
+.container{
+    width: 100%;
+    min-height: 400px;
+    border: 1px solid #000000;
+}
+.firstContainer{
+    width: 100%;
+    min-height: 200px;
+    border-bottom: 1px solid #000000;
+    display: flex;
+}
+.secondContainer{
+    width: 100%;
+    min-height: 200px;
+    display: flex;
+
+}
+.addPerson{
+    width: 50%;
+    height: 100%;
+    border-right: 1px solid #000000;
+}
+.personList{
+    width: 50%;
+    height: 100%;
+    align-items: center;
+}
+h3{
+    text-align: center;
+}
+input[type=text],[type=number]{
+    width: 100%;
+    padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+button{
+    width: 100px;
+    height: 50px;
+    
+
+    
+}
+label{
+    display: inline-block;
+}
+table,th,td{
+    border-bottom: 0px solid #000000;
+}
+table {
+    width: 100%;
+    text-align: center;
+
+  }
+
+  .activitesContainer{
+      width: 50%;
+      height: 100%;
+      align-items: center;
+  }

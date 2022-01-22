@@ -1,0 +1,35 @@
+.header{
+    width: 100%;
+    min-height: 50px;
+    background-color: #808080;
+    display: flex;
+}
+.firstChild{
+    width: 200px;
+    height: 50px;
+    margin: 10px;
+    background-color: #8ba2ba;
+}
+.secondChild{
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+}
+.secondChild-box{
+    width: 100px;
+    height: 50px;
+    margin: 2px;
+    background-color: #8ba2ba;
+}
+.secondChild-box1{
+    width: 100px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #8ba2ba;
+}
+.firstContainer{
+    width: 100%;
+    min-height: 200px;
+    background-color: #9c9c96;
+    display: flex;
+}

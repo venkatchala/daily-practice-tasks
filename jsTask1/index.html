@@ -1,0 +1,86 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="firstContainer">
+            <div class="addPerson">
+                <h3>Add person</h3>
+                <form action="">
+                    <div>
+                        <label for="">Name</label>
+                    </div>
+                    <div>
+                        <input type="text" id="uName">
+                    </div>
+                    <div>
+                        <label for="">Age</label>
+                    </div>
+                    <div>
+                        <input type="number" id="uAge">
+
+                    </div>
+                    <div>
+                        <label for="">Address</label>
+
+                    </div>
+                    <div>
+                        <input type="text" id="uAddress">
+
+                    </div>
+
+
+                </form>
+                <div>
+
+                    <button id="add" onclick="myFunction()"> Add</button>
+                </div>
+            </div>
+            <div class="personList">
+                <h3>Person List</h3>
+                <table id="personListTable">
+                    <thead>
+
+                        <tr>
+
+                            <th>Name</th>
+                            <th>Age</th>
+                            <th>Address</th>
+                        </tr>
+
+                    </thead>
+                    <tbody></tbody>
+
+
+                </table>
+            </div>
+        </div>
+        <div class="secondContainer">
+            <div class="activitiesContainer">
+                <h3>Activities</h3>
+                <table id="activitiesTable">
+                    <thead>
+                        <tr>
+                            <th>Date And Time</th>
+                            <th> Activities</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+            <div class="updateContainer"></div>
+        </div>
+    </div>
+    <script src="js/form.js"></script>
+
+
+</body>
+
+</html>

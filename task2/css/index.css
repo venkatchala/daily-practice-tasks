@@ -21,6 +21,9 @@
     display: flex;
     justify-content: flex-end;
 }
+.firstChild-box3{
+    display: none;
+}
 .child-child{
     width: 50px;
     height: 50px;
@@ -39,7 +42,8 @@
     height: 100%;
     align-items: center;
     justify-content: center;
-    padding-left: 300px;
+    padding-left: 150px;
+    padding-right: 150px;
 }
 .secondChildBox-parent{
     width: 100%;
@@ -75,8 +79,8 @@
     justify-content: space-evenly;
 }
 .thirdChild-box{
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     background-color: #ffe4c4;
     margin: 20px;
 }
@@ -93,13 +97,7 @@
     background-color: #f5f5dc;
     margin: 20px;
 }
-.fourthChild-box:nth-child(2){
-    flex-grow: 3;
-}
-.fourthChild-box:nth-child(4){
-    flex-grow: 3;
-}
-.fourthChild-box:nth-child(6){
+.fourthChild-box:nth-child(even){
     flex-grow: 3;
 }
 .fifthChild{
