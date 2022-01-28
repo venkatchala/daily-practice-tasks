@@ -7,9 +7,10 @@ function addFunction() {
     }
 }
 function addList(list) {
+    counter = counter + 1;
     var singleLine = document.createElement("div");
     singleLine.setAttribute("class", "singleLine");
-    singleLine.setAttribute("id", "singleLine");
+    singleLine.setAttribute("id", counter);
     document.getElementById('addList').appendChild(singleLine)
     var length = document.getElementById('addList').childNodes.length;
     var checkBox = document.createElement("input");
@@ -20,21 +21,15 @@ function addList(list) {
     para.innerHTML = list;
     document.getElementsByClassName('singleLine')[length - 1].appendChild(para);
     var button = document.createElement("button");
-    button.setAttribute("id", "removeList");
-    button.setAttribute("onclick", "removeList()");
+    button.setAttribute("class", "removeList");
+    button.setAttribute("onclick", "removeList(" + counter + ")");
     button.innerHTML = "-";
     document.getElementsByClassName("singleLine")[length - 1].appendChild(button);
     document.getElementById("list").value = "";
 
 
 }
-function removeList() {
-    //let element = document.getElementById("addList");
-    //var deleteElement = document.getElementById("singleLine");
-
-    let node = document.getElementById("singleLine");
-    if (node.parentNode) {
-        node.parentNode.removeChild(node);
-    }
-
+var counter = 0;
+function removeList(counter) {
+    document.getElementById(counter).remove();
 }
