@@ -1,0 +1,41 @@
+.container{
+    width: 100%;
+    position: relative;
+    text-align: justify;
+}
+.addDetails-container{
+    width: 500px;
+    min-height: 500px;
+    position: absolute;
+    border: #a9a9a9;
+    background-color: #c6dada;
+    left: 400px;
+
+    
+}
+h3{
+    text-align: center;
+}
+
+.info-container{
+    width: 100%;
+    display: flex;
+    margin: 10px;
+    padding-left:50px ;
+}
+.label-container{
+    width: 200px;
+    height: 50px;
+}
+.input-container{
+    width: 50%;
+    height: 20px;
+}
+.table-container{
+    width: 500px;
+    min-height: 200px;
+    justify-content: center;
+}
+th{
+    width: 100px;
+}
