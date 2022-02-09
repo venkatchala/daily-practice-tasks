@@ -89,16 +89,6 @@ function addEmployeeDetails() {
     // addEmployee(name, address, mobileNumber, description);
 
 }
-//getAll Employees
-function getAllEmployees() {
-    var employeeDetail = JSON.parse(localStorage.getItem("employeesDetail"));
-    var length = employeeDetail.length;
-    var i = 0;
-    while (i < length) {
-        ""
-    }
-
-}
 
 
 
