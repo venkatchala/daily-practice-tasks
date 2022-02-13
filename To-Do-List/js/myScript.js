@@ -1,4 +1,4 @@
-function addFunction() {
+/*function addFunction() {
     var list = document.getElementById("list").value;
     if (list != "") {
         addList(list);
@@ -32,4 +32,33 @@ function addList(list) {
 var counter = 0;
 function removeList(counter) {
     document.getElementById(counter).remove();
-}
+}*/
+$(document).ready(function () {
+    $("#button").click(function () {
+        var list = $("#list").val().trim();
+        if (list != "") {
+            var listDiv = $('<div class="list-container"></div>')
+            $(listDiv).append('<p class="listAdded">' + list + '</p>')
+            $(listDiv).append('<button class="removeList">X</button>')
+            $("#addList").append(listDiv);
+
+            $("#list").val("");
+        } else {
+            alert("Enter some text!..")
+        }
+    });
+    $("#list").keyup(function (event) {
+        if (event.keyCode == 13) {
+            $("#button").click();
+        }
+
+    });
+    $(document).on('click', '.listAdded', function () {
+        $(this).toggleClass("list-para")
+    });
+    $(document).on('click', '.removeList', function () {
+        $(this).closest('div').remove();
+    })
+
+})
+

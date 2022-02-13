@@ -6,20 +6,47 @@
     
 }
 input[type=text]{
-    height: 30px;
+    height: 50px;
     min-width: 400px;
+    border-color: #857d7d11;
+    margin: 5px;
     
+    
+}
+#button{
+    height: 50px;
+    width:50px;
+    background-color: rgb(98, 240, 98);
+    
+}
+p::first-letter{
+    text-transform: uppercase;
+}
+.list-para{
+    text-decoration: line-through;
+}
+.list-container{
+    display: flex;
+    height: 50px;
+    width: 455px;
+    background-color: #d3d3d3;
+    margin-left: 5px;
+    border: 1px solid #808080;
+   
+}
+.listAdded{
+    height: 50px;
+    width: 405px;   
+}
+.removeList{
+    width: 50px;
+    height: 50px;
+    background-color: #e24c4c;
 }
 button{
-    height: 30px;
-    width:30px;
-    
+    width: 50px;
+    border: 0;
 }
-.displayAllList{
-    min-height: 50px;
-}
-.singleLine{
-    display: flex;
-}
+
 
 
